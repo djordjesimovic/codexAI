@@ -127,7 +127,7 @@ let logoutBtn = document.querySelector('.logout-btn')
 logoutBtn.addEventListener('click', () => {
   localStorage.removeItem('jwt');
   localStorage.removeItem('auth');
-  window.location.replace('index.html')
+  window.location.replace('https://codex-ai-murex.vercel.app/')
 })
 
 fetch('https://login-rest-api.onrender.com/getuser', {
