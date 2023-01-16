@@ -148,3 +148,22 @@ form img {
   width: 30px;
   height: 30px;
 }
+
+.app-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  width: 100%;
+  background-color: #40414F;
+}
+.header-text{
+  font-size: 24px;
+  color: #dcdcdc;
+}
+.logout-btn{
+  font-size: 18px;
+  background-color: #dcdcdc;
+  padding: 5px 15px;
+  color: #343541;
+}

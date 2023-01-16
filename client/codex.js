@@ -1,6 +1,18 @@
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
+let auth = localStorage.getItem('auth');
+let jwt = localStorage.getItem('jwt');
+
+if(Number(auth) !== 1){
+  //location.href = 'index.html'
+  document.querySelector('body').style.display = 'none';
+  window.location.replace('index.html');
+}
+else{
+  document.querySelector('body').style.display = 'block';
+}
+
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
 
@@ -109,4 +121,26 @@ form.addEventListener('keyup', (e) => {
   if(e.keyCode === 13){
     handleSubmit(e);
   }
+})
+
+let logoutBtn = document.querySelector('.logout-btn')
+logoutBtn.addEventListener('click', () => {
+  localStorage.removeItem('jwt');
+  localStorage.removeItem('auth');
+  window.location.replace('index.html')
+})
+
+fetch('https://login-rest-api.onrender.com/getuser', {
+  method: 'GET',
+  mode: 'cors',
+  headers: {
+      'Content-Type': 'application/json',
+      'Authorization' : `Bearer ${jwt}`
+  }
+})
+.then(response => {
+  return response.json();
+})
+.then(data => {
+  console.log(data);
 })

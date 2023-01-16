@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+body{
+    background: #343541;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.main-heading{
+    color: #dcdcdc;
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 300px;
+    background: #40414F;
+    gap: 10px;
+}
+.form-heading{
+    font-size: 20px;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+.form-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+label{
+    color: #dcdcdc;
+}
+input{
+    font-size: 22px;
+    padding: 5px 10px;
+}
+input:focus{
+    outline: 0;
+}
+.submit-btn{
+    padding: 5px 60px;
+    font-size: 18px;
+    background-color: #dcdcdc;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.error-msg{
+    color: red;
+}
+.switch-link{
+    color: #dcdcdc;
+    cursor: pointer;
+}
+.register-form{
+    width: 450px;
+    height: 400px;
+    display: none;
+}
+.go-to-login-btn{
+    text-decoration: none;
+    background-color: #dcdcdc;
+    padding: 5px 15px;
+    color: #343541;
+}
