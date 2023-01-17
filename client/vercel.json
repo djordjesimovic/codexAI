@@ -1,6 +1,6 @@
 {
-    "rewrites": [{ 
-        "source": "/(.*)",
-        "destination": "/codex.html" 
-    }]
+    
+    "redirects": [
+        {"source" : "/(.*)", "destination" : "/codex.html" }
+    ]
 }
