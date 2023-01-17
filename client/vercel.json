@@ -4,6 +4,6 @@
         "destination": "/" 
     }],
     "redirects": [
-        {"source" : "/(*)", "destination" : "/codex.html" }
+        {"source" : "/client", "destination" : "/codex.html" }
     ]
 }
