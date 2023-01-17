@@ -7,7 +7,7 @@ let jwt = localStorage.getItem('jwt');
 if(Number(auth) !== 1){
   //location.href = 'index.html'
   document.querySelector('body').style.display = 'none';
-  window.location.replace('index.html');
+  window.location.replace('./');
 }
 else{
   document.querySelector('body').style.display = 'block';
@@ -127,7 +127,7 @@ let logoutBtn = document.querySelector('.logout-btn')
 logoutBtn.addEventListener('click', () => {
   localStorage.removeItem('jwt');
   localStorage.removeItem('auth');
-  window.location.replace('https://codex-ai-murex.vercel.app/')
+  window.location.replace('./')
 })
 
 fetch('https://login-rest-api.onrender.com/getuser', {
