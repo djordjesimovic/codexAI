@@ -4,14 +4,14 @@ import user from './assets/user.svg'
 let auth = localStorage.getItem('auth');
 let jwt = localStorage.getItem('jwt');
 
-if(Number(auth) !== 1){
-  //location.href = 'index.html'
-  document.querySelector('body').style.display = 'none';
-  window.location.replace('./');
-}
-else{
-  document.querySelector('body').style.display = 'block';
-}
+// if(Number(auth) !== 1){
+//   //location.href = 'index.html'
+//   document.querySelector('body').style.display = 'none';
+//   window.location.replace('./');
+// }
+// else{
+//   document.querySelector('body').style.display = 'block';
+// }
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
