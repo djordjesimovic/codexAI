@@ -167,3 +167,18 @@ form img {
   padding: 5px 15px;
   color: #343541;
 }
+.right-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.user-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.users-name{
+  color: #dcdcdc;
+}
