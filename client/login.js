@@ -28,7 +28,7 @@ loginForm.addEventListener('submit', (e) => {
             if(data.status === 'true'){
                 localStorage.setItem("jwt", data.token)
                 localStorage.setItem('auth', 1)
-                location.href = '/codex.html'
+                location.href = 'codex.html'
             }
             else{
                 loginErrorMsg.textContent = data.message;
